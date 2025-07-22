@@ -10,7 +10,7 @@ function App({ keycloak }) {
       },
     })
       .then(res => res.json())
-      .then(data => alert(data.message))
+      .then(data => alert(JSON.stringify(data)))
       .catch(err => alert('Errore: ' + err.message));
   };
 
